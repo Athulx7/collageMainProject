@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/btn_amount_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        android:textColor="#171C61"
+        android:text="Payment" />
+
+    <ImageView
+        android:id="@+id/pay_img_logo_cart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cards" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/pay_edt_cardno_cart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_button"
+                android:ems="10"
+                android:hint="Card Number"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/pay_edt_cvv_cart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_button"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="CVV"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <EditText
+                android:id="@+id/pay_edt_name_cart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:background="@drawable/custom_button"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Name on Card"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pay_edt_pin_cart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_button"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="PIN"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/pay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_button"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Amount"
+                android:padding="10dp"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/btn_payment_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/button_bg"
+                android:text="Payment" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

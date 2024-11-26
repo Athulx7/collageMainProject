@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_service_center_view_appointments">
+
+    <fragment
+        android:id="@+id/nav_service_center_view_appointments"
+        android:name="com.syntax.instantfuel.SERVICE_CENTER.ui.ViewAppointments"
+        android:label="View Appointments"
+        tools:layout="@layout/view_appointments" />
+
+    <fragment
+        android:id="@+id/nav_service_center_view_approved_appoints"
+        android:name="com.syntax.instantfuel.SERVICE_CENTER.ui.ViewApprovedAppointments"
+        android:label="Approved Appointments"
+        tools:layout="@layout/service_view_approved_appointments" />
+
+    <fragment
+        android:id="@+id/nav_service_center_view_paid_appoints"
+        android:name="com.syntax.instantfuel.SERVICE_CENTER.ui.ViewPaidAppointments"
+        android:label="Paid Appointments"
+        tools:layout="@layout/fuelstation_view_paid_appointments" />
+
+
+</navigation>

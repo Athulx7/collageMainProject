@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fuelstation_add_employee"
+            android:icon="@drawable/mechanic_service"
+            android:title="Add Employee" />
+        <item
+            android:id="@+id/nav_fuelstation_view_employee"
+            android:icon="@drawable/mechanic_service"
+            android:title="View Employee" />
+
+        <item
+            android:id="@+id/nav_fuelstation_view_appointments"
+            android:icon="@drawable/view_appointment"
+            android:title="View Appointments" />
+
+        <item
+            android:id="@+id/nav_fuelstation_view_approved_appoints"
+            android:icon="@drawable/approved_appointment"
+            android:title="Approved Appointments" />
+        <item
+            android:id="@+id/nav_fuelstation_view_paid_appoints"
+            android:icon="@drawable/paid"
+            android:title="Paid Appointments" />
+        <item
+            android:id="@+id/nav_fuelstation_feedback_seller"
+            android:icon="@drawable/seller_complaints"
+            android:title="Add Complaint" />
+
+    </group>
+</menu>

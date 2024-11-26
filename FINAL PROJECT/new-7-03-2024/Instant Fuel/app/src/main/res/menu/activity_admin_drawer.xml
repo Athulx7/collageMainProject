@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_verify_seller"
+            android:icon="@drawable/verify"
+            android:title="Verify Fuel Station" />
+<!--        <item-->
+<!--            android:id="@+id/nav_verify_serviceCenter"-->
+<!--            android:icon="@drawable/verify_service"-->
+<!--            android:title="Verify Service Center" />-->
+        <item
+            android:id="@+id/nav_view_seller"
+            android:icon="@drawable/fuel"
+            android:title="Fuel Station" />
+       <!-- <item
+            android:id="@+id/nav_view_service_center"
+            android:icon="@drawable/mechanic_service"
+            android:title="Service Center" />-->
+        <item
+            android:id="@+id/nav_view_user"
+            android:icon="@drawable/view_user"
+            android:title="View Users" />
+
+        <item
+            android:id="@+id/nav_view_complaints"
+            android:icon="@drawable/user_complaints"
+            android:title="User Complaints" />
+
+        <item
+            android:id="@+id/nav_view_complaints_seller"
+            android:icon="@drawable/seller_complaints"
+            android:title="Fuel Station Complaints" />
+
+    </group>
+</menu>

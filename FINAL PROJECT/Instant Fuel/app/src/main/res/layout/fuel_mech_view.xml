@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mech_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                android:text="Medium Text"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mech_STATUS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                android:padding="2dp"
+                android:text="Medium Text"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:text="Address : " />
+
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:text="sjnbj"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/textTo"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUserRqst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:text="Fuel Requested : " />
+
+            <TextView
+                android:id="@+id/fuelRqstTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:text="sjnbj"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:id="@+id/fuelRqstPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:text="Payment Status : Not Paid"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/paidIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:paddingVertical="5dp"
+                android:background="@drawable/verified"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/phone_icon"
+                android:paddingVertical="4dp" />
+
+            <TextView
+                android:id="@+id/mech_PHONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:paddingVertical="5dp"
+                android:text="Phone "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="4dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/email_icon"/>
+
+            <TextView
+                android:id="@+id/mech_EMAIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:paddingVertical="5dp"
+                android:text="email"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/fuelStationPhone"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

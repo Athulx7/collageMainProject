@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/agent_icon"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/agent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FUEL STATION"
+            android:textAlignment="center"
+
+            android:layout_marginBottom="20dp"
+            android:textColor="#CDCDCD" />
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/customer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USER"
+            android:textAlignment="center"
+            android:textColor="#CDCDCD" />
+
+        <ImageView
+            android:id="@+id/service_icon"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:background="@drawable/service_center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SERVICE CENTER"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="#CDCDCD" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_service_center_view_appointments"
+            android:icon="@drawable/view_appointment"
+            android:title="Service Appointments" />
+
+        <item
+            android:id="@+id/nav_service_center_view_approved_appoints"
+            android:icon="@drawable/approved_appointment"
+            android:title="Approved Appointments" />
+        <item
+            android:id="@+id/nav_service_center_view_paid_appoints"
+            android:icon="@drawable/paid"
+            android:title="Paid Appointments" />
+
+
+    </group>
+</menu>

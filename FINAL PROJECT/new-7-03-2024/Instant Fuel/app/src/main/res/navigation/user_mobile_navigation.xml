@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_view_nearby_user">
+
+    <fragment
+        android:id="@+id/nav_view_nearby_user"
+        android:name="com.syntax.instantfuel.USER.ui.NearByService"
+        android:label="NearBy Services"
+        tools:layout="@layout/user_view_near_by" />
+
+    <fragment
+        android:id="@+id/nav_view_properties_user"
+        android:name="com.syntax.instantfuel.USER.ui.ViewFuelStation"
+        android:label="Fuel Station"
+        tools:layout="@layout/view_fuel_stations_user" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_view_service_center_user"-->
+<!--        android:name="com.syntax.fuelspot.USER.ui.ViewServiceCenter"-->
+<!--        android:label="Service Center"-->
+<!--        tools:layout="@layout/view_service_center_user" />-->
+
+    <fragment
+        android:id="@+id/nav_request_appointment"
+        android:name="com.syntax.instantfuel.USER.ui.ViewRequestedAppointments"
+        android:label="Request Appointment"
+        tools:layout="@layout/request_appointment" />
+
+    <fragment
+        android:id="@+id/nav_view_appointment_user"
+        android:name="com.syntax.instantfuel.USER.ui.ApprovedAppointments"
+        android:label="View Appointments"
+        tools:layout="@layout/view_appointment" />
+
+    <fragment
+        android:id="@+id/nav_view_paid_appointment_user"
+        android:name="com.syntax.instantfuel.USER.ui.PaidAppointments"
+        android:label="Paid Appointments"
+        tools:layout="@layout/user_view_paid_appointment" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_service_center_request_appointment"-->
+<!--        android:name="com.syntax.fuelspot.USER.ui.ViewServiceCenterRequested"-->
+<!--        android:label="Service Center Appointment"-->
+<!--        tools:layout="@layout/user_service_request_appointment" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_service_center_approved_appointment"-->
+<!--        android:name="com.syntax.fuelspot.USER.ui.ServiceCenterApprovedAppointments"-->
+<!--        android:label="Service Center Approved Appointments"-->
+<!--        tools:layout="@layout/user_service_center_approved_appointments" />-->
+
+    <fragment
+        android:id="@+id/nav_add_bank_user"
+        android:name="com.syntax.instantfuel.USER.ui.BankDetailsFragment"
+        android:label="Bank"
+        tools:layout="@layout/fragment_bank_details" />
+
+    <fragment
+        android:id="@+id/nav_add_feedback_user"
+        android:name="com.syntax.instantfuel.USER.ui.Feedback"
+        android:label="Complaint"
+        tools:layout="@layout/feedback_fragment" />
+
+</navigation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_fuelstation_view_appointments">
+
+    <fragment
+        android:id="@+id/nav_fuelstation_view_appointments"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.ViewAppointments"
+        android:label="View Appointments"
+        tools:layout="@layout/view_appointments" />
+
+    <fragment
+        android:id="@+id/nav_fuelstation_view_approved_appoints"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.ViewApprovedAppointments"
+        android:label="Approved Appointments"
+        tools:layout="@layout/fragment_view_approved_appointments" />
+
+    <fragment
+        android:id="@+id/nav_fuelstation_view_paid_appoints"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.ViewPaidAppointments"
+        android:label="Paid Appointments"
+        tools:layout="@layout/fuelstation_view_paid_appointments" />
+
+    <fragment
+        android:id="@+id/nav_fuelstation_feedback_seller"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.FeedbackFuelStation"
+        android:label="Complaint"
+        tools:layout="@layout/feedback_fuelstation_fragment" />
+    <fragment
+        android:id="@+id/nav_fuelstation_add_employee"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.AddEmployee"
+        android:label="Add Employee"
+        tools:layout="@layout/add_employee" />
+    <fragment
+        android:id="@+id/nav_fuelstation_view_employee"
+        android:name="com.syntax.instantfuel.FUEL_STATION.ui.ViewEmployee"
+        android:label="View Employee"
+        tools:layout="@layout/view_employee" />
+</navigation>
